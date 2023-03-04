@@ -1,6 +1,6 @@
 # Lista de pendientes
 
-TODO:
+# TODO:
 [ ] Configurar el precommit (Husky)
 [ ] Crear Backend
 [ ] Integrar microfrontends (single-spa)
