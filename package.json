@@ -4,7 +4,11 @@
 	"license": "MIT",
 	"scripts": {
 		"prepare": "husky install",
-		"commit": "cz"
+		"commit": "cz",
+		"lint:types": "eslint . --ext .ts,.tsx,.js apps/",
+		"lint:format-check": "prettier --check .",
+		"lint:format-write": "prettier --write .",
+		"test:lint": "echo 'run-s \"lint:*\"'"
 	},
 	"private": true,
 	"devDependencies": {
@@ -21,6 +25,7 @@
 		"husky": "^8.0.0",
 		"nx": "15.8.1",
 		"prettier": "^2.6.2",
-		"typescript": "*"
+		"typescript": "*",
+		"npm-run-all": "^4.1.5"
 	}
 }
