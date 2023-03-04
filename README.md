@@ -15,9 +15,7 @@ Se maneja como un monorepo utilizando [nx](https://nx.dev)
 ## Estrategia repositorio
 
 - **Trunk based development:** Se tiene una única rama de vida larga (***main***), el resto de ramas son de vida corta, [más info](https://trunkbaseddevelopment.com/)
-- **Ramas:** Se crea una rama principal (main) sobre la cual va a estar el código de producción. CUando se empieza a trabajar en algo del código se debe crear una rama, la cual va a ser de vida corta, con el nombre ***{type}_{scope}***
-  - ***type***: Hace referencia a la categoría de trabajo que se va a realziar en la rama de vida corta y es un item del siguiente listado: `['build','chore','ci','docs','feat','fix','perf','refactor','revert','style','test']`.
-  - ***scope:*** Hace referencia al detalle de lo que se va a realizar, ej: *login, bug123, api, etc ...*
+- **Ramas:** Se crea una rama principal (main) sobre la cual va a estar el código de producción. CUando se empieza a trabajar en algo del código se debe crear una rama, la cual va a ser de vida corta, con el nombre ***{user_yyyymmdd}***
 - ***Commits:*** Los commits **deben** seguir [esta convención](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ## Estándares de código
