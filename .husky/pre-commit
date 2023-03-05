@@ -3,7 +3,7 @@
 
 #Verificar que la rama no es main, ya que no se puede hacer commit directo a main
 if [ "$(git rev-parse --abbrev-ref HEAD)" = "main" ]; then
-	echo "Recuerda que no se puede hacer commit directamente a main, haz checkout a tu rama {{user_yyyymmdd}}"
+	echo "Recuerda que no se puede hacer commit directamente a main, haz checkout a tu rama {{user/yyyymmdd}}"
 	exit 1
 fi
 

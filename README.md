@@ -59,8 +59,12 @@ Cada paquete/app está hecho 100% en [TypeScript](https://www.typescriptlang.org
 ## Estrategia repositorio
 
 - **Trunk based development:** Se tiene una única rama de vida larga (***main***), el resto de ramas son de vida corta, [más info](https://trunkbaseddevelopment.com/)
-- **Ramas:** Se crea una rama principal (main) sobre la cual va a estar el código de producción. CUando se empieza a trabajar en algo del código se debe crear una rama, la cual va a ser de vida corta, con el nombre {***user_yyyymmdd_worktodo***} ej: ***jgaray_20230401_login***
+- **Ramas:** Se crea una rama principal (main) sobre la cual va a estar el código de producción. CUando se empieza a trabajar en algo del código se debe crear una rama, la cual va a ser de vida corta, con el nombre {***user/yyyymmdd***} ej: ***jgaray/20230401***
 - ***Commits:*** Los commits **deben** seguir [esta convención](https://www.conventionalcommits.org/en/v1.0.0/)
+
+## Merge Request
+
+Todos los cambios que se integren a la rama principal (*main*), deben pasar a través de un merge/pull request. El estandar del PR es el siguiente:
 
 ### Estándares de código
 
