@@ -1,6 +1,6 @@
 {
   "extends": "ts-config-single-spa",
-  "files": ["src/claroid-root-config.ts"],
+  "files": ["src/claroid-mfe-root-config.ts"],
   "compilerOptions": {
     "declarationDir": "dist"
   },
