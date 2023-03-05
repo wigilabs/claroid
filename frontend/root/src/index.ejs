@@ -48,7 +48,8 @@
     {
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@claroid/root-config": "//localhost:9000/claroid-root-config.js"
+        "@claroid-mfe/root-config": "//localhost:9000/claroid-mfe-root-config.js",
+				"@claroid-mfe/login": "//localhost:8080/js/app.js"
       }
     }
   </script>
@@ -75,7 +76,7 @@
     You need to enable JavaScript to run this app.
   </noscript>
   <script>
-    System.import('@claroid/root-config');
+    System.import('@claroid-mfe/root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
