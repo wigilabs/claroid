@@ -8,4 +8,5 @@ if [ "$(git rev-parse --abbrev-ref HEAD)" = "main" ]; then
 fi
 
 #pnpm run test:lint
-echo "husky TODO: configurar el precommit"
+#TODO: TODO: configurar el precommit
+echo "husky precommit initialization"
