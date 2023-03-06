@@ -1,0 +1,75 @@
+/* @import url('//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons'); */
+body {
+  background-color: #cdcdcd;
+  font-family: "Roboto";
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-red {
+  background: radial-gradient(131.94% 131.94% at 4.22% -1.85%,
+      #d62f23 0%,
+      #8d2c25 100%);
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.btn-red,
+.btn-red:hover {
+  background-color: #da291c;
+  border-radius: 133px;
+  color: #fff;
+  height: 50px;
+  width: 320px;
+}
+
+.btn-red:disabled {
+  opacity: 0.9;
+}
+
+.color-red {
+  color: #da291c;
+}
+
+.color-azul {
+  color: #0097a9;
+}
+
+.color-gris {
+  color: #a7a7a7;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container-error {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.error-msj {
+  color: #DA291C;
+  font-size: 10px;
+  text-align: left;
+}
+
+.border-error {
+  border: 2px solid #DA291C;
+}

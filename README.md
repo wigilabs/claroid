@@ -39,16 +39,16 @@ pnpm dlx turbo link
 
 ### Apps y Paquetes
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-- **Apps:** Todos los microfrontends
-- **backends:** Todos los microservicios
-- **libs:** Las utilidades compartidas
+- `frontend`: workspace contenedor de todos los microfrontends utilizados en el proyecto
+  - `root`: app tipo root-config trabajada con [single-spa](https://single-spa.js.org/)
+  - `login`: app tipo app-parcel trabajada con [single-spa](https://single-spa.js.org/) con el framework [vue](https://vuejs.org/)
+- `backend`: workspace contenedor de todos los microservicios utilizados en el proyecto
+- `libs`: Utilidades compartidas en el proyecto
+  - `ui`: a stub React component library shared by both `web` and `docs` applications
+  - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+  - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
-Cada paquete/app está hecho 100% en [TypeScript](https://www.typescriptlang.org/).
+Cada paquete/app está hecho 100% en [TypeScript](https://www.typescriptlang.org/) / Javascript.
 
 ### Utilidades
 

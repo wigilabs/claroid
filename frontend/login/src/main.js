@@ -1,7 +1,11 @@
-import { h, createApp } from 'vue';
-import singleSpaVue from 'single-spa-vue';
+// import './set-public-path';
+import { h, createApp } from "vue";
+import singleSpaVue from "single-spa-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+import router from "./router";
 
-import App from './App.vue';
+import App from "./App.vue";
 
 const vueLifecycles = singleSpaVue({
   createApp,
@@ -19,6 +23,9 @@ const vueLifecycles = singleSpaVue({
       });
     },
   },
+  handleInstance: (app) => {
+    app.use(router);
+  }
 });
 
 export const bootstrap = vueLifecycles.bootstrap;

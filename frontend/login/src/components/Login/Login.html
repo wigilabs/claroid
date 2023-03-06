@@ -1,0 +1,62 @@
+<div class="text-center">
+  <div class="row m-0">
+    <div class="col p-0 m-0 vh-100 bg-red container-red">
+      <img class="img-red" src="@/assets/bg-login.png" alt="background" />
+      <div class="container-text">
+        <p class="text-light fw-bold fs-4 p-0 mb-1">Bienvenido a Claro ID.</p>
+        <p class="text-light fs-5 p-0 w-60 m-auto">
+          Tu identidad digital para nuestros servicios en línea.
+        </p>
+      </div>
+      <img class="mt-4 line-white" src="@/assets/line-login.svg" alt="line" />
+    </div>
+    <div class="col p-0 m-0 vh-100">
+      <div class="container-login">
+        <div>
+          <img class="logo" src="@/assets/claroid-logo.svg" alt="logo" />
+        </div>
+        <p class="text-dark fw-bold fs-4 mt-5">Iniciar sesión</p>
+        <div>
+          <Form v-slot="{dirty}">
+            <div v-if="viewActive === 1" class="mb-3">
+              <Field name="email" type="email" class="form-control" :class="{ 'border-error': errorEmail }"
+                placeholder="Ingresa tu usuario" :rules="validateEmail" v-model="form.email" />
+              <div class="container-error">
+                <ErrorMessage class="error-msj" name="email" />
+              </div>
+            </div>
+            <div v-if="viewActive === 2" class="mb-3 container-pass">
+              <p class="fs-14">
+                Para verificar tu identidad, selecciona la imagen que elegiste
+                al momento del registo.
+              </p>
+              <div class="mb-2">
+                <img class="img-registro pointer" src="@/assets/ejemplo1.png" alt="img" />
+                <img class="img-registro pointer" src="@/assets/ejemplo2.png" alt="img" />
+                <img class="img-registro pointer" src="@/assets/ejemplo3.png" alt="img" />
+              </div>
+              <input type="email" class="form-control" placeholder="Ingresa tu contraseña" />
+            </div>
+          </Form>
+          <p class="color-azul fw-bold underline fs-14 pointer">
+            ¿Olvidaste tu usuario o contraseña?
+          </p>
+          <button type="button" class="btn btn-red mb-3" v-if="viewActive === 1" @click="validEmail()">
+            Continuar
+          </button>
+          <button type="button" class="btn btn-red mb-3" v-if="viewActive === 2" @click="iniciarSesion()">
+            Iniciar sesión
+          </button>
+          <p class="fs-14">
+            ¿No estás registrado aún?
+            <span class="color-red fw-bold underline pointer">Regístrate aquí</span>
+          </p>
+        </div>
+        <div class="container-footer mt-4">
+          <img class="logo-footer" src="@/assets/logo-footer.svg" alt="logo-claro" />
+          <spam class="color-gris fs-14 mt-1">Todos los derechos reservados. Claro 2023</spam>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
