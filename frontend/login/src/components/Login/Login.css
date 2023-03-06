@@ -1,0 +1,69 @@
+.container {
+    width: 100%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.container-red {
+    box-shadow: 0px 4px 50px rgba(217, 217, 217, 0.25);
+    border-radius: 0px 50px 50px 0px;
+}
+
+.img-red {
+    width: 90%;
+}
+
+.container-text {
+    margin-top: -20%;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: auto;
+}
+
+.logo {
+    width: 70%;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    border-radius: 133px;
+    height: 50px;
+    width: 320px;
+}
+
+.logo-footer {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.container-pass {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+
+.img-registro {
+    width: 100px;
+    padding: 5px;
+}
+
+.line-white {
+    width: 100px;
+}

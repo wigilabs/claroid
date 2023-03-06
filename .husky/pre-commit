@@ -10,3 +10,6 @@ fi
 #pnpm run test:lint
 #TODO: TODO: configurar el precommit
 echo "husky precommit initialization"
+
+#single-spa
+#pnpm exec pretty-quick --staged && pnpm exec concurrently pnpm:test pnpm:lint
