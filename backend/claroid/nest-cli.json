@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/claroid/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/claroid/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/claroid",
+  "projects": {
+    "claroid": {
+      "type": "application",
+      "root": "apps/claroid",
+      "entryFile": "main",
+      "sourceRoot": "apps/claroid/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/claroid/tsconfig.app.json"
+      }
+    },
+    "login": {
+      "type": "application",
+      "root": "apps/login",
+      "entryFile": "main",
+      "sourceRoot": "apps/login/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/login/tsconfig.app.json"
+      }
+    }
+  }
+}
